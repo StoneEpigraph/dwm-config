@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/stone/resource/pic/dwm-systray-20210418-67d76bd.diff" added="2021-11-14T13:31:37.207541Z" modified="2021-11-14T13:31:37.207552Z" visited="2021-11-14T13:31:37.207542Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2021-11-14T13:31:37.207546Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/stone/Downloads/dwm-systray-20210418-67d76bd%20(1).diff" added="2021-11-14T13:32:52.434944Z" modified="2021-11-14T13:32:52.434957Z" visited="2021-11-14T13:32:52.434945Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2021-11-14T13:32:52.434950Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/stone/Downloads/dwm-systray-20210418-67d76bd.diff" added="2021-11-14T13:33:50.186276Z" modified="2021-11-14T13:33:50.186281Z" visited="2021-11-14T13:33:50.186277Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2021-11-14T13:33:50.186278Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
