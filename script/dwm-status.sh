@@ -20,4 +20,4 @@ fi
 #datetime
 DateTime=$(date +"%a %m-%d %T")
 
-xsetroot -name "\uf028$Volume|$DateTime|[$BatteryStatus:$Battery]"
+xsetroot -name "Vol.$Volume|$DateTime|[$BatteryStatus:$Battery]"

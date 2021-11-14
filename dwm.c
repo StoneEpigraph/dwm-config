@@ -1401,6 +1401,7 @@ run(void)
 void
 runautostart(void)
 {
+        system("cd ~/resource/dwm/script; ./autostart.sh &");
 	char *pathpfx;
 	char *path;
 	char *xdgdatahome;
