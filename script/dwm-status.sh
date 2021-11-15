@@ -23,4 +23,4 @@ fi
 #datetime
 DateTime=$(date +"%a %m-%d %T")
 
-xsetroot -name " $VolumeStatus$Volume% 﨟$DateTime $BatteryStatus:$Battery"
+xsetroot -name " $VolumeStatus$Volume% 﨟$DateTime $BatteryStatus$Battery"
