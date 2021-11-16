@@ -15,22 +15,15 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static const unsigned int baralpha = 0xd0;
-static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
-static const unsigned int alphas[][3]      = {
-	/*               fg      bg        border     */
-	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
-};
 
 /* tagging */
 // https://www.nerdfonts.com/cheat-sheet
-static const char *tags[] = { "\ue795", "\uf7ae", "\ue79e", "\uf1d7", "\uf72c", "\ue706", "\uf030", "\uf013", "\uf2b7" };
+static const char *tags[] = { "", "", "", "﬐", "", "", "", "煉", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
