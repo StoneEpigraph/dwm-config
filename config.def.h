@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 
 /* tagging */
 // https://www.nerdfonts.com/cheat-sheet
-static const char *tags[] = { "", "", "", "﬐", "", "", "", "煉", "" };
+static const char *tags[] = { "", "", "", "﬐", "", "", "", "煉", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -66,6 +66,8 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *flameshot[] = { "flameshot", "gui", NULL };
 static const char *volup[] = { "amixer", "-qM", "set", "Master", "2%+", "umute", NULL };//音量+
 static const char *voldown[] = { "amixer", "-qM", "set", "Master", "2%-", "umute", NULL };
+static const char *lightup[] = { "/home/stone/resource/dwm/script/lightup.sh", NULL };
+static const char *lightdown[] = { "/home/stone/resource/dwm/script/lightdown.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -73,6 +75,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_Up,     spawn,          {.v = volup} },
 	{ MODKEY,                       XK_Down,   spawn,          {.v = voldown} },
+	{ MODKEY,                       XK_bracketright,     spawn,          {.v = lightup} },
+	{ MODKEY,                       XK_bracketleft,   spawn,          {.v = lightdown} },
 	{ ControlMask|ShiftMask,        XK_a,      spawn,          {.v = flameshot } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
