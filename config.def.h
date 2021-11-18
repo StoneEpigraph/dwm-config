@@ -8,6 +8,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Source Code Pro:size=12",
 					"Symbols Nerd Font:size=12", 
+					"WenQuanyi MicroHei:pixelsize=12:type=Regular:antialias=true:autohit=true",
 					"JoyPixels:pixelsize=12:type=Regular:antialias=true:autohit=true" };
 static const char dmenufont[]       = "monospace:size=12";
 static const char col_gray1[]       = "#222222";
@@ -69,6 +70,7 @@ static const char *voldown[] = { "amixer", "-qM", "set", "Master", "2%-", "umute
 static const char *lightup[] = { "/home/stone/resource/dwm/script/lightup.sh", NULL };
 static const char *lightdown[] = { "/home/stone/resource/dwm/script/lightdown.sh", NULL };
 
+// get key map can use xev app 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
