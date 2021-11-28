@@ -69,6 +69,7 @@ static const char *volup[] = { "amixer", "-qM", "set", "Master", "2%+", "umute",
 static const char *voldown[] = { "amixer", "-qM", "set", "Master", "2%-", "umute", NULL };
 static const char *lightup[] = { "/home/stone/resource/dwm/script/lightup.sh", NULL };
 static const char *lightdown[] = { "/home/stone/resource/dwm/script/lightdown.sh", NULL };
+static const char *lockWin[] = {"slock", NULL };
 
 // get key map can use xev app 
 static Key keys[] = {
@@ -87,6 +88,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY|ShiftMask, 		XK_l,	   spawn,	   {.v = lockWin} },
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
