@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #battery
-Battery=$(cat /sys/class/power_supply/BAT1/capacity)%
-BatteryStatus=$(cat /sys/class/power_supply/BAT1/status)
+Battery=$(cat /sys/class/power_supply/BAT0/capacity)%
+BatteryStatus=$(cat /sys/class/power_supply/BAT0/status)
 if [[ $BatteryStatus == D* ]]; then
     BatteryStatus=''
 else
@@ -22,5 +22,7 @@ fi
 
 #datetime
 DateTime=$(date +"%a %m-%d %T")
+# xbacklight
+XbackLightVol=$(xbacklight | awk -F '.' ‘{print $1}’)
 
 xsetroot -name " $VolumeStatus$Volume% 﨟$DateTime $BatteryStatus$Battery"
